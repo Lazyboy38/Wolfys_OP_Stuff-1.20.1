@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "opstuff",
+	"version": "${version}",
+	"name": "Wolfy's OP Stuff",
+	"description": "My First Mod, nothing special just thought some fun OP Stuff could be ... well fun :D",
+	"authors": [
+		"itsLoneWolf38"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/opstuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.wolfy.opstuff.WolfysOPStuff"
+		],
+		"client": [
+			"net.wolfy.opstuff.WolfysOPStuffClient"
+		],
+		"fabric-datagen": [
+			"net.wolfy.opstuff.WolfysOPStuffDataGenerator"
+		]
+	},
+	"mixins": [
+		"opstuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
